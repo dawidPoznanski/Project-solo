@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background-color;
+}
+
+h1 {
+  font-family: $brand-font;
+  font-size: $brand-font-size;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: $paragraph-font;
+  font-size: $header-font-size;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+  font-weight: 400;
+}
+
+h6 {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+  font-weight: 400;
+}
+
+p {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+  color: $paragraph-color;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 800;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+ul li {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+}
+
+ol {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  
+}
+
+ol li {
+  font-family: $paragraph-font;
+  font-size: $paragraph-font-size;
+  font-weight: 300;
+}
+
+button {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: $button-color;
+  border: 1px solid $button-color;
+  border-radius: 5px;
+  font-family: $paragraph-font;
+  font-weight: 300;
+  font-size: $paragraph-font-size;
+  color: $font-color;
+}
+
+i {
+  margin: 0 10px;
+}
+// .show {
+//   visibility: hidden;
+// }

@@ -1,0 +1,38 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-color: $font-color;
+  border-bottom: 1px solid $background-color ;
+}
+
+
+
+.dropdown{
+  display: flex;
+  align-items: center;
+}
+
+.border {
+  border-left: 1px solid $background-color;
+  padding: 16px;
+}
+
+.border i {
+  font-size: 16px;
+  color: $hover-color;
+}
+
+
+
+.border a {
+  color: $hover-color;
+}
+
+
+
+.border .user {
+  color: $signature-color;
+}
