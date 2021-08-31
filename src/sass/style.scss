@@ -7,11 +7,13 @@
 /* Components */
 // @import "components/form_field";
 @import "components/dropdown";
-@import "components/section-layout";
+@import "components/sidebar";
+@import "components/links-table";
 
 // /* Sections */
 @import "sections/navbar";
-@import "sections/sidebar";
+@import "sections/links";
+@import"sections/general";
 
 // /* Pages / Views */
 // @import "pages/registration";

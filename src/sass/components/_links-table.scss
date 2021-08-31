@@ -1,0 +1,56 @@
+.container-table {
+  display: flex;
+}
+
+.links-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+}
+
+.links-column li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid $hover-color;
+}
+.links-column li .url-links {
+  width: 300px;
+  height: auto;
+}
+
+.links-column li h4 {
+  font-size: 20px;
+}
+
+.links-column a {
+  color: $signature-color;
+  font-size: 20px;
+}
+
+.links-column img {
+  height: 20px;
+  width: 20px;
+}
+
+.scroll-wrapper {
+  width: 100%;
+}
+
+.links-column li:hover {
+  background: $background-color;
+}
+
+.links-icons {
+  visibility: hidden;
+}
+
+li .links-icons:hover {
+  visibility: visible;
+  border: 1px solid transparent;
+}

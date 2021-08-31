@@ -17,16 +17,16 @@
             <div class="dropdown-menu">
             <ol class="dropdown">
                 <li class="dropbtn border">
-                   <a href="#"><i class="fas fa-wallet"></i>$1,500.00<i class="fas fa-chevron-down"></i></a>
+                   <a href="#"><img src="images/wallet.svg" alt=""> $1,500.00 <img src="images/arrow-down.svg" alt=""></a>
                     <ul class="dropdown-content">
                         <li>1</li>
                         <li>23</li>
                         <li>3</li>
                     </ul>
                 </li>
-                <li class="border"><a href="#">k <i class="fas fa-bell"></i></a></li>
-                <li class="border"><a href="#" class="user"><i class="far fa-user-circle"></i> Leonardo Dicaprio</a></li>
-                <li class="border"><a href="">k<i class="fas fa-sign-out-alt"></i></a></li>
+                <li class="border"><a href="#"><img src="images/notification.svg" alt=""></a></li>
+                <li class="border"><a href="#" class="user"><img src="images/profile.svg" alt=""> Leonardo Dicaprio</a></li>
+                <li class="border"><a href=""><img src="images/quit.svg" alt=""></a></li>
             </ol>
         </div>
         </nav>
@@ -36,13 +36,13 @@
                 <i class="fas fa-bars sidebar-toggler"></i>
             </div>
             <ol class="sidebar-list">
-                <li class="sidebar-item"><i class="far fa-star sidebar-icon"></i>General</li>
-                <li class="sidebar-item"><i class="far fa-star sidebar-icon"></i>Details</li>
-                <li class="sidebar-item"><i class="fas fa-link sidebar-icon"></i>Links</li>
-                <li class="sidebar-item"><i class="fas fa-boxes sidebar-icon"></i>Banners</li>
-                <li class="sidebar-item"><i class="fas fa-user sidebar-icon"></i>Personal data</li>
-                <li class="sidebar-item"><i class="fas fa-file-invoice-dollar sidebar-icon"></i>Payout</li>
-                <li class="sidebar-item"><i class="fas fa-undo sidebar-icon"></i>Postback</li>
+                <li class="sidebar-item"><img src="images/general.svg" alt=""> General</li>
+                <li class="sidebar-item"><img src="images/details.svg" alt=""> Details</li>
+                <li class="sidebar-item"><img src="images/links.svg" alt=""> Links</li>
+                <li class="sidebar-item"><img src="images/banners.svg" alt=""> Banners</li>
+                <li class="sidebar-item"><img src="images/personaldata.svg" alt=""> Personal data</li>
+                <li class="sidebar-item"><img src="images/payout.svg" alt=""> Payout</li>
+                <li class="sidebar-item"><img src="images/postback.svg" alt=""> Postback</li>
             </ol>
             <div class="sidebar-footer">
                 <div class="sidebar-footer-h1">Your manager</div>
@@ -55,6 +55,25 @@
     </header>
     <main class="main-content">
         <section class="general">
+            <div class="title">
+                <h3>General statistic</h3>
+            </div>
+            <div class="container">
+                <div class="date-picker">
+                    <input type="date">
+                    <input type="date">
+                    <button class="restart-button"><img src="images/refresh.svg" alt=""></button>
+                </div>
+                <!--Put 4 divs for statistics form charts-->
+                <div class="main-statistics">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <!--After put h4 element and checkboxes-->
+                    <!--Chart space-->
+                </div>
+            </div>
 
         </section>
         <section class="links">
@@ -64,65 +83,93 @@
             <div class="container">
                 <button type="button">+ add new</button>
                 <div class="scroll-wrapper">
-                    <table class="container-table">
-                        <tbody class="tables">
-                        <tr >
-                            <th scope="col">home page</th>
-                            <td><a href="http://www.homepage.com">http://www.homepage.com</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Home page</th>
-                            <td><a href="http://www.homepage.com">http://www.homepage.com</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Currently offer</th>
-                            <td><a href="http://www.currently.com">http://www.currently.com</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Blupix</th>
-                            <td><a href="http://www.currently.com">http://www.currently.com</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Your site</th>
-                            <td><a href="http://www.yoursite.com">http://www.yoursite.com</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Google</th>
-                            <td><a href="https://www.google.pl/">https://www.google.pl</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Facebook</th>
-                            <td><a href="http://www.facebook.com">http://www.facebook.com</a></td>
-                            <td class="icons"><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Dashboard</th>
-                            <td><a href="http://www.dashboard.com">http://www.dashboard.com</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Blurax</th>
-                            <td><a href="http://www.blurax.com">http://www.blurax.com</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Piece of Wine</th>
-                            <td><a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                        <tr>
-                            <th>Twitter</th>
-                            <td><a href="http://twitter.com">http://twitter.com</a></td>
-                            <td><i class="fas fa-link"></i> <i class="far fa-trash-alt"></i></td>
-                        </tr>
-                    </tbody>
-                    </table>
+                    <div class="container-table">
+                        <ul class="links-column">
+                            <li >
+                                <div class="url-links"><h4>Home page</h4></div>
+                                <div class="url-links"><a href="http://www.homepage.com">http://www.homepage.com</a></div>
+                                
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                   <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="url-links"><h4>Curently offer</h4></div>
+                                <div class="url-links"><a href="http://www.curentlyoffer.com">http://www.curentlyoffer.com</a></div>
+                                
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                   <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="url-links"><h4>Blurpix</h4></div>
+                                <div class="url-links"><a href="http://www.blurpix.com">http://www.blurpix.com</a></div>
+                                
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                   <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="url-links"><h4>Your Site</h4></div>
+                                <div class="url-links"><a href="http://www.yoursite.com">http://www.yoursite.com</a></div>
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                   <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="url-links"><h4>Google</h4></div>
+                                <div class="url-links"><a href="http://www.google.com">http://www.google.com</a></div>
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                   <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="url-links"><h4>Facebook</h4></div>
+                                <div class="url-links"><a href="http://www.facebook.com">http://www.facebook.com</a></div>
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                   <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="url-links"><h4>Dashboard</h4></div>
+                                <div class="url-links"><a href="http://www.dashboard.com">http://www.dashboard.com</a></div>
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                   <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="url-links"><h4>Blurax</h4></div>
+                                <div class="url-links"><a href="http://www.blurax.com">http://www.blurax.com</a></div>
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                    <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="url-links"><h4>Piece of Wine</h4></div>
+                                <div class="url-links"><a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></div>
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                   <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="url-links"><h4>Twitter</h4></div>
+                                <div class="url-links"><a href="http://www.twitter.com">http://www.twitter.com</a></div>
+                                <div class="links-icons">
+                                    <a href="#"><img src="images/links.svg" alt=""></a> 
+                                   <a href="#"><img src="images/trash.svg" alt=""></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                   </div>
                   <button type="button">+ add new</button>
             </div>
