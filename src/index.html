@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./vendor/bootstrap-grid.css">
+    <link rel="stylesheet" href="fontello-d8ecf209/css/fontello.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Just Do It</title>
 </head>
@@ -17,7 +18,7 @@
             <div class="dropdown-menu">
             <ol class="dropdown">
                 <li class="dropbtn border">
-                   <a href="#"><img src="images/wallet.svg" alt=""> $1,500.00 <img src="images/arrow-down.svg" alt=""></a>
+                   <a href="#"><img src="images/wallet.svg" alt=""> $1,500.00 <i class="icon icon-glyph-1"></i></a>
                     <ul class="dropdown-content">
                         <li>1</li>
                         <li>23</li>
@@ -54,33 +55,38 @@
         </section>
     </header>
     <main class="main-content">
+        <!--GENERAL STATISTIC-->
         <section class="general">
             <div class="title">
                 <h3>General statistic</h3>
             </div>
             <div class="container">
-                <div class="date-picker">
-                    <input type="date">
-                    <input type="date">
-                    <button class="restart-button" type="button"><img src="images/refresh.svg" alt=""></button>
-                </div>
-                <!--Put 4 divs for statistics form charts-->
-                <div class="main-statistics">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <!--After put h4 element and checkboxes-->
-                    <!--Chart space-->
+                <div class="container-fluid">
+                    <div class="date-picker">
+                        <input type="date">
+                        <input type="date">
+                        <button class="restart-button" type="button"><img src="images/refresh.svg" alt=""></button>
+                    </div>
+                    <!--Put 4 divs for statistics form charts-->
+                    <div class="main-statistics">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <!--After put h4 element and checkboxes-->
+                        <!--Chart space-->
+                    </div>
                 </div>
             </div>
-
         </section>
+        <!--END OF GENERAL STATISTIC-->
+        <!--LINKS-->
         <section class="links">
             <div class="title">
                 <h3>links</h3>
             </div>
             <div class="container">
+                <div class="container-fluid">
                 <button type="button">+ add new</button>
                 <div class="scroll-wrapper">
                     <div class="container-table">
@@ -169,9 +175,10 @@
                     </div>
                   </div>
                   <button type="button">+ add new</button>
+                </div>
             </div>
         </section>
-
+        <!--END OF Links-->
     </main>
     <footer>
 
