@@ -4,11 +4,14 @@
 }
 
 .title {
-  color: $background-color;
+  color: black;
   padding: 10px 20px;
   border-bottom: 1px solid $background-color;
 }
 
+h3 {
+  color: $hover-color;
+}
 // .container {
 //   display: flex;
 //   flex-direction: column;

@@ -18,16 +18,16 @@
             <div class="dropdown-menu">
             <ol class="dropdown">
                 <li class="dropbtn border">
-                   <a href="#"><img src="images/wallet.svg" alt=""> $1,500.00 <i class="icon icon-glyph-1"></i></a>
+                   <a href="#"><i class="icon-header icon-glyph-27"></i> $1,500.00 <i class="icon-header icon-glyph"></i></a>
                     <ul class="dropdown-content">
                         <li>1</li>
                         <li>23</li>
                         <li>3</li>
                     </ul>
                 </li>
-                <li class="border"><a href="#">.<img src="images/notification.svg" alt=""></a></li>
-                <li class="border"><a href="#" class="user"><img src="images/profile.svg" alt=""> Leonardo Dicaprio</a></li>
-                <li class="border"><a href="">.<img src="images/quit.svg" alt=""></a></li>
+                <li class="border"><a href="#"><i class="icon-header icon-glyph-15"></i>.</a></li>
+                <li class="border"><a href="#" class="user"><i class="icon-header icon-glyph-21"></i> Leonardo Dicaprio</a></li>
+                <li class="border"><a href=""><i class="icon-header icon-glyph-22"></i>.</a></li>
             </ol>
         </div>
         </nav>
@@ -37,51 +37,88 @@
                 <i class="fas fa-bars sidebar-toggler"></i>
             </div>
             <ol class="sidebar-list">
-                <li class="sidebar-item"><img src="images/general.svg" alt=""> General</li>
-                <li class="sidebar-item"><img src="images/details.svg" alt=""> Details</li>
-                <li class="sidebar-item"><img src="images/links.svg" alt=""> Links</li>
-                <li class="sidebar-item"><img src="images/banners.svg" alt=""> Banners</li>
-                <li class="sidebar-item"><img src="images/personaldata.svg" alt=""> Personal data</li>
-                <li class="sidebar-item"><img src="images/payout.svg" alt=""> Payout</li>
-                <li class="sidebar-item"><img src="images/postback.svg" alt=""> Postback</li>
+                <li class="sidebar-item"><i class="icon-sidebar icon-glyph-10"></i><a href="#general">General</a></li>
+                <li class="sidebar-item"><i class="icon-sidebar icon-glyph-9"></i><a href="#details">Details</a></li>
+                <li class="sidebar-item"><i class="icon-sidebar icon-glyph-11"></i><a href="#links">Links</a></li>
+                <li class="sidebar-item"><i class="icon-sidebar icon-glyph-6"></i><a href="#banners">Banners</a></li>
+                <li class="sidebar-item"><i class="icon-sidebar icon-glyph-18"></i><a href="#personal-data">Personal data</a></li>
+                <li class="sidebar-item"><i class="icon-sidebar icon-glyph-17"></i><a href="#payout">Payout</a></li>
+                <li class="sidebar-item"><i class="icon-sidebar icon-glyph-20"></i><a href="#postback">Postback</a></li>
             </ol>
             <div class="sidebar-footer">
                 <div class="sidebar-footer-h1">Your manager</div>
                 <div class="sidebar-footer-content">
                     <img class="sidebar-img" src="images/profile-picture.jpg" alt="">
-                    <h3>Mikhael E.</h3>
+                    <h4>Mikhael E.</h4>
                 </div>
             </div>
         </section>
     </header>
     <main class="main-content">
         <!--GENERAL STATISTIC-->
-        <section class="general">
+        <section class="general" id="general">
             <div class="title">
                 <h3>General statistic</h3>
             </div>
+            <div class="date-picker-wrapper wrapper">
+                <div class="date-picker">
+                    <form class="date-form">
+                        <input type="date-start" type="text" name="date" placeholder="01.09.2021">
+                        <input type="date-end" type="text" name="date" placeholder="01.09.2021">
+                        <i class="icon-glyph-7 icon-calendar"></i>
+                    </form>
+                    <button class="restart-button" type="button"><i class="icon-sidebar icon-glyph-23" ></i></button>
+                </div>
+            </div>
             <div class="container">
                 <div class="container-fluid">
-                    <div class="date-picker">
-                        <input type="date">
-                        <input type="date">
-                        <button class="restart-button" type="button"><img src="images/refresh.svg" alt=""></button>
-                    </div>
-                    <!--Put 4 divs for statistics form charts-->
                     <div class="main-statistics">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <!--After put h4 element and checkboxes-->
-                        <!--Chart space-->
+                        <div>
+                            <div>
+                                <h5>Visit Signups</h5>
+                            </div>
+                            <div>
+                                <h5>FTD</h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h5>Net deposit</h5>
+                            </div>
+                            <div>
+                                <h5>Turn over</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title-earning">
+                        <h5>Earning chart</h5>
+                    </div>
+                    <!-- <div class="checkboxes">
+                        <div>
+                            <input type="checkbox">
+                            <label for="signups">Signups</label>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <label for="ftd">FTD</label>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <label for="earned">Earned</label>
+                        </div>
+                    </div> -->
+                    <!--Chart space-->
+                    <div class="charts">
+                        <canvas id="myChart"></canvas>
                     </div>
                 </div>
             </div>
         </section>
         <!--END OF GENERAL STATISTIC-->
         <!--LINKS-->
-        <section class="links">
+        <section class="links" id="links">
             <div class="title">
                 <h3>links</h3>
             </div>
@@ -95,80 +132,80 @@
                                 <div class="url-links"><h4>Home page</h4></div>
                                 <div class="url-links"><a href="http://www.homepage.com">http://www.homepage.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                   <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                             <li >
                                 <div class="url-links"><h4>Curently offer</h4></div>
                                 <div class="url-links"><a href="http://www.curentlyoffer.com">http://www.curentlyoffer.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                   <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                             <li >
                                 <div class="url-links"><h4>Blurpix</h4></div>
                                 <div class="url-links"><a href="http://www.blurpix.com">http://www.blurpix.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                   <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                             <li >
                                 <div class="url-links"><h4>Your Site</h4></div>
                                 <div class="url-links"><a href="http://www.yoursite.com">http://www.yoursite.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                   <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="url-links"><h4>Google</h4></div>
                                 <div class="url-links"><a href="http://www.google.com">http://www.google.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                   <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                             <li >
                                 <div class="url-links"><h4>Facebook</h4></div>
                                 <div class="url-links"><a href="http://www.facebook.com">http://www.facebook.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                   <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                             <li >
                                 <div class="url-links"><h4>Dashboard</h4></div>
                                 <div class="url-links"><a href="http://www.dashboard.com">http://www.dashboard.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                   <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                             <li >
                                 <div class="url-links"><h4>Blurax</h4></div>
                                 <div class="url-links"><a href="http://www.blurax.com">http://www.blurax.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                    <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                             <li >
                                 <div class="url-links"><h4>Piece of Wine</h4></div>
                                 <div class="url-links"><a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                   <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                             <li >
                                 <div class="url-links"><h4>Twitter</h4></div>
                                 <div class="url-links"><a href="http://www.twitter.com">http://www.twitter.com</a></div>
                                 <div class="links-icons">
-                                    <a href="#">.<img src="images/links.svg" alt=""></a>
-                                   <a href="#">.<img src="images/trash.svg" alt=""></a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-11"></i>.</a>
+                                    <a href="#"><i class="icon-transparent icon-glyph-25"></i>.</a>
                                 </div>
                             </li>
                         </ul>
@@ -179,10 +216,16 @@
             </div>
         </section>
         <!--END OF Links-->
+        <section class="" id="details"></section>
+        <section class="" id="banners"></section>
+        <section class="" id="personal-data"></section>
+        <section class="" id="payout"></section>
+        <section class="" id="postback"></section>
     </main>
     <footer>
 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

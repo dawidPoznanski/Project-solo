@@ -29,7 +29,7 @@
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
-  text-align: center;
+  text-align: start;
   /* opacity: .8; */
 
   /* For safety - reset parent styles, that can break glyph codes*/

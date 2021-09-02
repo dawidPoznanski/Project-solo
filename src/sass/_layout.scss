@@ -105,8 +105,22 @@ img {
   height: 15px;
   width: 15px;
 }
-.icon:before {
+
+.icon-header:before {
   color: $hover-color;
+  margin: 0 10px;
+}
+
+.icon-sidebar:before {
+  color: $font-color;
+}
+
+.icon-transparent{
+  color: $hover-color;
+}
+
+.icon-transparent:hover{
+  color: orange;
 }
 
 .container {
@@ -119,6 +133,7 @@ img {
 
 .container-fluid {
   width: 100%;
+  padding: 40px 0;
   // padding-left: 15px;
   // padding-right: 15px;
   display: flex;

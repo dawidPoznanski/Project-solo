@@ -47,11 +47,12 @@
   background: $background-color;
 }
 
+
 .links-icons {
   visibility: hidden;
 }
 
-li .links-icons:hover {
+.links-icons:hover {
   visibility: visible;
   border: 1px solid transparent;
 }
