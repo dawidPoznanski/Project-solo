@@ -2,16 +2,22 @@
   background-color: $side-bar-color;
   color: $font-color;
   height: 100vh;
-  width: 190px;
+  width: 240px;
   display: flex;
   flex-direction: column;
-  padding: 13px;
-  gap: 20px;
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.active{
+  left: 0;
+  transition: 450ms;
 }
 
 .sidebar-header {
+  padding: 10px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,28 +35,30 @@
 .sidebar-list {
   display: flex;
   flex-direction: column;
-  padding: 5px;
   border-bottom: 1px solid white;
   font-family: $paragraph-font;
   font-size: 16px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   width: 100%;
 }
 
+li a {
+  font-family: $paragraph-font;
+  color: $font-color;
+  font-weight: 300;
+  padding: 0 5px;
+}
+
 .sidebar-item {
-  padding: 7px;
+  padding: 10px;
   width: 100%;
 }
 
 .sidebar-item:hover {
   border-left: 5px solid $button-color;
+  padding-left: 5px;
   cursor: pointer;
-  background-color: hsl(0, 0%, 20%);
-}
-
-.sidebar-icon {
-  padding: 7px;
-  align-self: center;   
+  background-color: $hover-darker-color;
 }
 
 /** Sidebar Footer */
@@ -58,15 +66,17 @@
 .sidebar-footer {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  margin: 10px;
 }
 
 .sidebar-footer-h1 {
+  padding: 15px;
   text-transform: uppercase;
   font-family: $paragraph-font;
 }
 
 .sidebar-img {
+
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -76,7 +86,6 @@
 .sidebar-footer-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .sidebar-footer-content > h3 {

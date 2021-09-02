@@ -1,10 +1,22 @@
-function toggleMenu() {
-  document.querySelector('.sidebar').classList.toggle('show');
-}
-document.querySelector('.sidebar-toggler').addEventListener('click', function(e) {
-  e.preventDefault();
-  toggleMenu();
+const openMenu = document.querySelector('#show-menu');
+const hideMenu = document.querySelector('#hide-menu');
+const sideMenu = document.querySelector('.sidebar');
+
+openMenu.addEventListener('click', function(){
+  sideMenu.classList.add('active');
 });
+
+hideMenu.addEventListener('click', function(){
+  sideMenu.classList.remove('active');
+});
+
+// function toggleMenu() {
+//   document.querySelector('.sidebar').classList.toggle('show');
+// }
+// document.querySelector('.sidebar-toggler').addEventListener('click', function(e) {
+//   e.preventDefault();
+//   toggleMenu();
+// });
 // elem1.addEventListener('click', () => {
 //   toggleMenu(true);
 // })
