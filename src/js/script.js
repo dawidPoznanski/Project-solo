@@ -25,8 +25,8 @@ hideMenu.addEventListener('click', function(){
 // })
 
 // eslint-disable-next-line no-undef
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
+const ctx = document.getElementById('myChart').getContext('2d');
+const chart = new Chart(ctx, {
   // 1
   type: 'bar',
   data: {
