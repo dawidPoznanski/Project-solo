@@ -97,7 +97,7 @@ button {
   font-family: $paragraph-font;
   font-weight: 300;
   font-size: $paragraph-font-size;
-  color: $font-color;
+  color: $font-lg-color;
 }
 
 img {
@@ -112,7 +112,7 @@ img {
 }
 
 .icon-sidebar:before {
-  color: $font-color;
+  color: $font-lg-color;
 }
 
 .icon-transparent{
@@ -176,6 +176,12 @@ img {
 
 @media(max-width: 767px) {
   @include grid('sm');
+  
+  [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 @media(min-width: 768px) {

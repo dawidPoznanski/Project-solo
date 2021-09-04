@@ -8,6 +8,7 @@
   display: inline-flex;
   flex-wrap: wrap;
 }
+
 .date-form {
   border: 1px solid $hover-color;
   border-radius: 5px;
@@ -19,6 +20,7 @@
   cursor: pointer;
   margin-right: 12px;
 }
+
 input {
   border: transparent;
   background-color: inherit;
@@ -27,16 +29,19 @@ input {
   font-size: 16px;
   max-width: 140px;
   font-family: $paragraph-font;
+  outline: none;
 }
-input:first-child{
+
+input:first-child {
   border-right: 1px solid $hover-color;
 }
 
-input::placeholder{
+input::placeholder {
   color: $hover-color;
   border: transparent;
 }
-.icon-calendar::before{
+
+.icon-calendar::before {
   color: $hover-color;
   margin-right: 20px;
 }

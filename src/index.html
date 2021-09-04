@@ -30,7 +30,6 @@
                 <li class="border"><a href=""><i class="icon-header icon-glyph-22"></i>.</a></li>
             </ol>
         </div>
-        
         </nav>
         <section class="sidebar" id="nav-menu">
             <div class="sidebar-header">
@@ -64,30 +63,35 @@
             <div class="date-picker-wrapper wrapper">
                 <div class="date-picker">
                     <form class="date-form">
-                        <input type="date-start" type="text" name="date" placeholder="01.09.2021">
-                        <input type="date-end" type="text" name="date" placeholder="01.09.2021">
+                        <input class="date-start" type="text" name="date" placeholder="01.09.2021">
+                        <input class="date-end" type="text" name="date" placeholder="01.09.2021">
                         <i class="icon-glyph-7 icon-calendar"></i>
+                        <!-- <button type="submit"></button> -->
                     </form>
                     <button class="restart-button" type="button"><i class="icon-sidebar icon-glyph-23" ></i></button>
                 </div>
             </div>
             <div class="container">
                 <div class="container-fluid">
-                    <div class="main-statistics">
-                        <div>
-                            <div>
+                    <div class="chart-statistics">
+                        <div class="col-md-5">
+                            <div class="row chart-statistics-details">
                                 <h5>Visit Signups</h5>
+                                <p>124</p>
                             </div>
-                            <div>
+                            <div class="row chart-statistics-details">
                                 <h5>FTD</h5>
+                                <p>445</p>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="col-md-5">
+                            <div class="row chart-statistics-details">
                                 <h5>Net deposit</h5>
+                                <p>564</p>
                             </div>
-                            <div>
+                            <div class="row chart-statistics-details">
                                 <h5>Turn over</h5>
+                                <p>432</p>
                             </div>
                         </div>
                     </div>
@@ -223,6 +227,19 @@
         <section class="" id="personal-data"></section>
         <section class="" id="payout"></section>
         <section class="" id="postback"></section>
+        <!-- MODAL -->
+        <div class="overlay" id="overlay">
+            <div class="modal" id="myModal">
+                <!-- <button class="btn-close js--close-modal">X</button> -->
+                <div class="modal-text">
+                    <h4>Do you really want to Quit?</h4>
+                </div>
+                <div class="modal-buttons">
+                    <button class="js--close-modal">Cancel</button>
+                    <button class="js--close-modal">Quit</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 

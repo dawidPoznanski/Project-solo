@@ -1,6 +1,6 @@
 .sidebar {
   background-color: $side-bar-color;
-  color: $font-color;
+  color: $font-lg-color;
   height: 100vh;
   width: 240px;
   display: flex;
@@ -11,7 +11,7 @@
   transition: 800ms;
 }
 
-.active{
+.active {
   left: 0;
   transition: 450ms;
 }
@@ -44,7 +44,7 @@
 
 li a {
   font-family: $paragraph-font;
-  color: $font-color;
+  color: $font-lg-color;
   font-weight: 300;
   padding: 0 5px;
 }
@@ -76,7 +76,6 @@ li a {
 }
 
 .sidebar-img {
-
   width: 60px;
   height: 60px;
   border-radius: 50%;
