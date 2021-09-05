@@ -66,25 +66,27 @@ function closeModal() {
   document.getElementById('overlay').classList.remove('show');
 }
 
+/* zamknięcie modala poprzez X */
 document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
   btn.addEventListener('click', function(e) {
     e.preventDefault();
     closeModal();
   });
 });
-
+/* zamknięcie modala poprzez kliknięcie na wyszarzone tło */
 document.querySelector('#overlay').addEventListener('click', function(e) {
   if(e.target === this) {
     closeModal();
   }
 });
-
+/* zamknięcie modala poprzez ESC na klawiaturze*/
 document.addEventListener('keyup', function(e) {
   if(e.keyCode === 27) {
     closeModal();
   }
 });
 
+/* Wywołanie modala*/
 function openModal(modal) {
   document.querySelectorAll('#overlay > *').forEach(function(modal) {
     modal.classList.remove('show');

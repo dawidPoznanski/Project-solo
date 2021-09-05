@@ -10,21 +10,32 @@
 }
 
 .chart-statistics {
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 24px  0;
   width: 100%;
+  display: flex;
 }
 
 .chart-statistics-details{
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 400px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $background-color;
 }
 
+.chart-statistics-details h5 {
+  font-size: 20px;
+  color: $font-darker-color;
+  font-weight: 400;
+}
+
+.chart-statistics-details p{
+  font-weight: 800;
+  font-size: 20px;
+}
 .charts {
   margin: 24px 0;
 }
