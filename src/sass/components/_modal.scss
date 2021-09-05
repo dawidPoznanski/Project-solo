@@ -12,21 +12,22 @@
   align-items: center;
 
   overflow: auto;
-//   padding: 30px;
+  //padding: 30px;
 
   display: none;
-  }
+}
 
 .overlay.show {
   display: flex;
-  }
+}
 
 .modal {
-  max-width: 800px;
+  max-width: 600px;
+  width: 600px;
   margin: auto;
   background-color: #ffffff;
   position: relative;
-//   padding: 30px;
+  //padding: 30px;
   display: none;
 }
 
