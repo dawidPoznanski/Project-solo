@@ -1,3 +1,5 @@
+/* global Chart */
+
 const openMenu = document.querySelector('#show-menu');
 const hideMenu = document.querySelector('#hide-menu');
 const sideMenu = document.querySelector('.sidebar');
@@ -24,11 +26,10 @@ hideMenu.addEventListener('click', function(){
 //   toggleMenu(false);
 // })
 // eslint-disable-next-line no-undef
-// console.log(chart);
-// const Chart = {};
+
 
 const ctx = document.getElementById('myChart').getContext('2d');
-const chart = new Chart(ctx, {
+new Chart(ctx, {
   // 1
   type: 'bar',
   data: {
