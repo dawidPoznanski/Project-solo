@@ -1,0 +1,47 @@
+.date-picker-wrapper {
+  text-align: center;
+  padding: 32px;
+  border-bottom: 1px solid $background-color;
+}
+
+.date-picker {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.date-form {
+  border: 1px solid $hover-color;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+input {
+  border: transparent;
+  background-color: inherit;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: 140px;
+  font-family: $paragraph-font;
+  outline: none;
+}
+
+input:first-child {
+  border-right: 1px solid $hover-color;
+}
+
+input::placeholder {
+  color: $hover-color;
+  border: transparent;
+}
+
+.icon-calendar::before {
+  color: $hover-color;
+  margin-right: 20px;
+}

@@ -1,4 +1,4 @@
-*{
+*, ::before, ::after{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -97,12 +97,83 @@ button {
   font-family: $paragraph-font;
   font-weight: 300;
   font-size: $paragraph-font-size;
-  color: $font-color;
+  color: $font-lg-color;
 }
 
-i {
+button:hover{
+  background-color: $button-hover-color;
+}
+
+img {
+  margin: 0 10px;
+  height: 15px;
+  width: 15px;
+}
+
+.icon-header:before {
+  color: $hover-color;
   margin: 0 10px;
 }
-// .show {
-//   visibility: hidden;
-// }
+
+.icon-sidebar:before {
+  color: $font-lg-color;
+}
+
+.icon-transparent{
+  color: $hover-color;
+}
+
+.icon-transparent:hover{
+  color: orange;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 40px 0;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GRID TEMPLATE */
+/*GRID BASE*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*GRID COLUMNS*/
+
+/* MEDIA QUERIES*/
+
+@media(max-width: 767px) {
+  @include grid('sm');
+  
+  [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+}
