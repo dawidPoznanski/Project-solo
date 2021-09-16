@@ -10,17 +10,14 @@
 }
 
 .chart-statistics {
-  justify-content: flex-end;
-  align-items: center;
-  padding: 24px  0;
-  width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .chart-statistics-details{
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
+  margin: 20px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $background-color;

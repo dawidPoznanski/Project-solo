@@ -8,8 +8,9 @@
   border-bottom: 1px solid $background-color ;
 }
 
-.navbar .hamburger {
-  padding-left: 200px;
+.hamburger {
+  display: flex;
+  padding: 16px 100px;
 }
 
 .dropdown{
@@ -28,9 +29,16 @@
 }
 
 .border a {
+  font-size: 0;
   color: $hover-color;
 }
 
 .border .user {
+  font-size: 16px;
   color: $signature-color;
+}
+
+.border .amount {
+  font-size: 16px;
+  color: $hover-color;
 }

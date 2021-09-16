@@ -1,0 +1,78 @@
+/* GRID TEMPLATE */
+/*GRID BASE*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*GRID COLUMNS*/
+
+/* MEDIA QUERIES*/
+
+@media(max-width: 767px) {
+  @include grid('sm');
+  
+  [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .chart-statistics {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .list-item {
+    flex-direction: column;
+  }
+
+  .list-item-title {
+    padding:20px;
+  }
+
+  .list-item-icons {
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+    padding: 16px;
+  }
+
+  .sidebar {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+  
+  [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+  
+  [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+  
+  [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}

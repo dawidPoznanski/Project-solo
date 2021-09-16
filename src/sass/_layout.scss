@@ -145,35 +145,3 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-/* GRID TEMPLATE */
-/*GRID BASE*/
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-/*GRID COLUMNS*/
-
-/* MEDIA QUERIES*/
-
-@media(max-width: 767px) {
-  @include grid('sm');
-  
-  [class*="col-"] {
-    flex: 0 0 100%;
-    max-width: 100%;
-    flex-wrap: wrap;
-  }
-}
-
-@media(min-width: 768px) {
-  @include grid('md');
-}
-
-@media(min-width: 992px) {
-  @include grid('lg');
-}
-
-@media(min-width: 1200px) {
-  @include grid('xl');
-}

@@ -20,7 +20,7 @@
             <div class="dropdown-menu">
             <ol class="dropdown">
                 <li class="dropbtn border">
-                    <a href="#"><i class="icon-header icon-wallet"></i> $1,500.00 <i class="icon-header icon-arrow-down"></i></a>
+                    <a href="#" class="amount"><i class="icon-header icon-wallet"></i> $1,500.00 <i class="icon-header icon-arrow-down"></i></a>
                     <ul class="dropdown-content">
                         <li>1</li>
                         <li>23</li>
@@ -28,8 +28,8 @@
                     </ul>
                 </li>
                 <li class="border"><a href="#"><i class="icon-header icon-notification"></i>.</a></li>
-                <li class="border"><a href="#" class="user" id="show-menu"><i  class="icon-header icon-profile"></i> Leonardo Dicaprio</a></li>
-                <li class="border"><a href=""><i class="icon-header icon-quit"></i>.</a></li>
+                <li class="border"><a href="#" class="user"><i  class="icon-header icon-profile"></i> Leonardo Dicaprio</a></li>
+                <li class="border"><a href="#"><i class="icon-header icon-quit"></i>.</a></li>
             </ol>
         </div>
         </nav>
@@ -67,7 +67,7 @@
                     <div class="date-form">
                         <input class="date-start" type="text" name="date" placeholder="01.09.2021">
                         <input class="date-end" type="text" name="date" placeholder="01.09.2021">
-                        <i class="icon-calendar icon-calendar"></i>
+                        <i class="icon-calendar"></i>
                     </div>
                     <button class="restart-button" type="button"><i class="icon-sidebar icon-refresh" ></i></button>
                 </div>
@@ -101,20 +101,6 @@
                     <div class="title-earning">
                         <h5>Earning chart</h5>
                     </div>
-                    <!-- <div class="checkboxes">
-                        <div>
-                            <input type="checkbox">
-                            <label for="signups">Signups</label>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                            <label for="ftd">FTD</label>
-                        </div>
-                        <div>
-                            <input type="checkbox">
-                            <label for="earned">Earned</label>
-                        </div>
-                    </div> -->
                     <!--Chart space-->
                     <div class="charts">
                         <canvas id="myChart"></canvas>
@@ -132,88 +118,6 @@
                 <div class="container-fluid">
                 <button type="button">+ add new</button>
                     <div class="container-table">
-                        <!-- <ul class="links-column">
-                            <li >
-                                <div class="url-links"><h4>Home page</h4></div>
-                                <div class="url-links"><a href="http://www.homepage.com">http://www.homepage.com</a></div>
-                                <div class="links-icons">
-                                    <a href="#"><i class="icon-transparent icon-links"></i>.</a>
-                                    <a href="#"><i class="icon-transparent icon-trash"></i>.</a>
-                                </div>
-                            </li>
-                            <li >
-                                <div class="url-links"><h4>Curently offer</h4></div>
-                                <div class="url-links"><a href="http://www.curentlyoffer.com">http://www.curentlyoffer.com</a></div>
-                                <div class="links-icons">
-                                    <a href="#"><i class="icon-transparent icon-links"></i>.</a>
-                                    <a href="#"><i class="icon-transparent icon-trash"></i>.</a>
-                                </div>
-                            </li>
-                            <li >
-                                <div class="url-links"><h4>Blurpix</h4></div>
-                                <div class="url-links"><a href="http://www.blurpix.com">http://www.blurpix.com</a></div>
-                                <div class="links-icons">
-                                    <a href="#"><i class="icon-transparent icon-links"></i>.</a>
-                                    <a href="#"><i class="icon-transparent icon-trash"></i>.</a>
-                                </div>
-                            </li>
-                            <li >
-                                <div class="url-links"><h4>Your Site</h4></div>
-                                <div class="url-links"><a href="http://www.yoursite.com">http://www.yoursite.com</a></div>
-                                <div class="links-icons">
-                                    <a href="#"><i class="icon-transparent icon-links"></i>.</a>
-                                    <a href="#"><i class="icon-transparent icon-trash"></i>.</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="url-links"><h4>Google</h4></div>
-                                <div class="url-links"><a href="http://www.google.com">http://www.google.com</a></div>
-                                <div class="links-icons">
-                                    <a href="#"><i class="icon-transparent icon-links"></i>.</a>
-                                    <a href="#"><i class="icon-transparent icon-trash"></i>.</a>
-                                </div>
-                            </li>
-                            <li >
-                                <div class="url-links"><h4>Facebook</h4></div>
-                                <div class="url-links"><a href="http://www.facebook.com">http://www.facebook.com</a></div>
-                                <div class="links-icons">
-                                    <a href="#"><i class="icon-transparent icon-links"></i>.</a>
-                                    <a href="#"><i class="icon-transparent icon-trash"></i>.</a>
-                                </div>
-                            </li>
-                            <li >
-                                <div class="url-links"><h4>Dashboard</h4></div>
-                                <div class="url-links"><a href="http://www.dashboard.com">http://www.dashboard.com</a></div>
-                                <div class="links-icons">
-                                    <a href="#"><i class="icon-transparent icon-links"></i>.</a>
-                                    <a href="#"><i class="icon-transparent icon-trash"></i>.</a>
-                                </div>
-                            </li>
-                            <li >
-                                <div class="url-links"><h4>Blurax</h4></div>
-                                <div class="url-links"><a href="http://www.blurax.com">http://www.blurax.com</a></div>
-                                <div class="links-icons">
-                                    <a href="#"><i class="icon-transparent icon-links"></i>.</a>
-                                    <a href="#"><i class="icon-transparent icon-trash"></i>.</a>
-                                </div>
-                            </li>
-                            <li >
-                                <div class="url-links"><h4>Piece of Wine</h4></div>
-                                <div class="url-links"><a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></div>
-                                <div class="links-icons">
-                                    <a href="#"><i class="icon-transparent icon-links"></i>.</a>
-                                    <a href="#"><i class="icon-transparent icon-trash"></i>.</a>
-                                </div>
-                            </li>
-                            <li >
-                                <div class="url-links"><h4>Twitter</h4></div>
-                                <div class="url-links"><a href="http://www.twitter.com">http://www.twitter.com</a></div>
-                                <div class="links-icons">
-                                    <i class="icon-transparent icon-links"></i>
-                                    <i class="icon-transparent icon-trash"></i>
-                                </div>
-                            </li>
-                        </ul> -->
                         <div class="list-wrapper wrapper">
                             <div class="list-item">
                                 <h4 class="list-item-title">Home page</h4>
