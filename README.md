@@ -1,1 +1,1 @@
-Solo projektz panelem administratora
+https://dawidpoznanski.github.io/Project-solo/
